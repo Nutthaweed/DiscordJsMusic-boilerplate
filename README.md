@@ -13,3 +13,6 @@
 Discord Music javascript v13 boilerplate
 you can load this repository by
 ` git clone `
+```git
+git clone
+```
