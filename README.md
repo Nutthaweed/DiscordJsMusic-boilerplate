@@ -19,9 +19,9 @@ git clone https://github.com/Nutthaweed/DiscordJsMusic-boilerplate.git
 to Created your own DiscordMusicBot faster
 
 ## weakness
-- 1. this boilerplate cannot create a loop song
+- this boilerplate cannot create a loop song
 
 ## strength
-- 1. global command can use in multi-server
-- 2. can create and make in ur own style
-- 3. can props in very cool design and great idea!
+-  global command can use in multi-server
+-  can create and make in ur own style
+-  can props in very cool design and great idea!
