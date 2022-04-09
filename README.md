@@ -14,5 +14,14 @@ Discord Music javascript v13 boilerplate
 you can load this repository by
 ` git clone `
 ```git
-git clone
+git clone https://github.com/Nutthaweed/DiscordJsMusic-boilerplate.git
 ```
+to Created your own DiscordMusicBot faster
+
+## weakness
+- 1. this boilerplate cannot create a loop song
+
+## strength
+- 1. global command can use in multi-server
+- 2. can create and make in ur own style
+- 3. can props in very cool design and great idea!
