@@ -25,8 +25,8 @@ module.exports = {
         await interaction.editReply({
             embeds: [
                 new MessageEmbed()
-                .setDescription(`**Currently Playing**\n` + (currentSong ? `\`[${currentSong.duration}]\` ${currentSong.title} --<@S{currentSong.requestedBy.id}>` : "No song playing")
-                 `\n\n**Queue**\n${queueString}`
+                .setDescription(`😺 **Currently Playing**\n` + (currentSong ? `\`[${currentSong.duration}]\` ${currentSong.title} --<@${currentSong.requestedBy.id}>` : "No song playing") +
+                 `\n\n**Queue**\n${queueString} 🏆`
                 )
                 .setFooter({ text: `Page ${page + 1} of ${totalPages}` })
                 .setThumbnail(currentSong.setThumbnail)

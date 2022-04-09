@@ -13,6 +13,8 @@ module.exports = {
                queue: false,
                length: 19
             })
+
+            const song = queue.current
             await interaction.editReply({
                 embeds: [new MessageEmbed()
                     .setThumbnail(song.thumbnail)

@@ -13,8 +13,8 @@ module.exports = {
 
             queue.skip()
             await interaction.editReply({
-                embed: [
-                    new MessageEmbed().setDescription(`King Crimson is now skip ${currentSong.title}`).setThumbnail(currentSong.thumbnail)
+                embeds: [
+                    new MessageEmbed().setDescription(`⌚ King Crimson is now skip ${currentSong.title}`).setThumbnail(currentSong.thumbnail)
                 ]
             })
      },

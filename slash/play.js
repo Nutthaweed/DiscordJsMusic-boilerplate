@@ -26,7 +26,7 @@ module.exports = {
     ),
     run: async ({client, interaction})=> {
         if (!interaction.member.voice.channel)
-        return interaction.reply("You need to be in a voice channel!")
+        return interaction.reply("😡You need to be in a voice channel!")
 
         const queue = await client.player.createQueue(interaction.guild)
         if (!queue.connection) await queue.connect(interaction.member.voice.channel)
@@ -45,7 +45,7 @@ module.exports = {
             const song = result.tracks[0]
             await queue.addTrack(song)
             embed
-            .setDescription(`**[${song.title}](${song.url})** has been added to the Queue`)
+            .setDescription(`🎵 Star Platinum had been chosen **[${song.title}](${song.url})**  to the Queue`)
             .setThumbnail(song.thumbnail)
             .setFooter({ text: `Duration: ${song.duration}` })
         } else if (interaction.options.getSubcommand() === "playlist"){
@@ -55,7 +55,7 @@ module.exports = {
                 searchEngine: QueryType.YOUTUBE_PLAYLIST
             })
             if (result.tracks.length === 0)
-            return interaction.editReply("No result")
+            return interaction.editReply("❌No result")
 
             const playlist = result.playlist
             await queue.addTracks(result.tracks)
@@ -73,11 +73,11 @@ module.exports = {
             return interaction.editReply("No result")
 
             const song = result.tracks[0]
-            await queue.addTracks(song)
+            await queue.addTrack(song)
             embed
-            .setDescription(`**[${playlist.title}](${playlist.url})** has been added to the Queue`)
+            .setDescription(`🎶**[${song.title}](${song.url})** has been added to the Queue`)
             .setThumbnail(song.thumbnail)
-            .setFooter({ text: `Duration: ${playlist.duration}` })
+            .setFooter({ text: `Duration: ${song.duration}` })
         }
         if (!queue.playing) await queue.play()
         await interaction.editReply({
