@@ -18,6 +18,17 @@ git clone https://github.com/Nutthaweed/DiscordJsMusic-boilerplate.git
 ```
 to Created your own DiscordMusicBot faster
 
+## How to use
+first You use this command to loading your command
+```js
+node index.js load
+```
+and then you run with this
+```js
+node index.js
+```
+then enjoy
+
 ## weakness
 - this boilerplate cannot create a loop song
 
